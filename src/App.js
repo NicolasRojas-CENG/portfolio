@@ -1,10 +1,19 @@
 import './App.css';
 import Header from './components/Header';
 import Navbar from './components/Navbar';
+import About from './components/About';
 
 function App() {
     return (
-        <><Header></Header><Navbar></Navbar></>
+        <>
+            <header>
+                <Header></Header>
+                <Navbar></Navbar>
+            </header>
+            <body>
+                <About></About>
+            </body>
+        </>
     );
 }
 

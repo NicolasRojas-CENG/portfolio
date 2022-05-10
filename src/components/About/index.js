@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Navbar() {
+function About() {
     return (
         <section>
             <h3>About Me</h3>
@@ -12,4 +12,4 @@ function Navbar() {
     );
 }
 
-export default Navbar;
+export default About;

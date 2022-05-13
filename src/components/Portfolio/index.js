@@ -1,16 +1,14 @@
 import React from 'react';
+//import PhotoList from '../PhotoList';
+import { capitalizeFirstLetter } from '../../utils/helpers';
 
-function Portfolio() {
-    return (
-        <section>
-            <h3>Portfolio</h3>
-            <article>
-                <p>
-                    This is a project placeholder.
-                </p>
-            </article>
-        </section>
-    );
+function Portfolio(props) {
+  const { currentCategory } = props;
+  return (
+    <section>
+      <h1 data-testid="h1tag">{capitalizeFirstLetter(currentCategory.name)}</h1>
+      <p>{currentCategory.description}</p>
+    </section>
+  );
 }
-
 export default Portfolio;

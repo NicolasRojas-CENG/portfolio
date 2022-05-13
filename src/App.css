@@ -6,7 +6,11 @@ header{
     background-color: rgb(220, 191, 0);
 }
 
-a{
+header li{
     color: rgb(45, 43, 43);
     text-decoration: none;
+}
+p{
+    background-color: rgb(220, 191, 0);
+    color: rgb(45, 43, 43);
 }

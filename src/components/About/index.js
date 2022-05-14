@@ -1,15 +1,23 @@
 import React from 'react';
-
-function Navbar() {
+import coverImage from '../../assets/Avatar.svg';
+function About() {
     return (
-        <section>
-            <h3>About Me</h3>
-            <p>I am a 23 year old Costarican born Canadian, born in 1998. I attended
-                Humber College in the Computer Engineering Technology program, and
-                graduated with honours in 2019. I am currentlly partaking in a web
-                development bootcamp from the University of Toronto. </p>
+        <section className="About my-5">
+            <div className="my-2">
+                <h1 id="about">Who am I?</h1>
+                <img src={coverImage} className="my-2" alt="cover" />
+            </div>
+            <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum turpis sed ex
+          condimentum molestie. Mauris condimentum lectus ut ornare dignissim. Mauris faucibus urna
+          mi, ac feugiat metus aliquam maximus. Proin aliquam justo nec diam vulputate vestibulum.
+          Aenean sollicitudin nulla at nisi ornare, nec suscipit massa eleifend. Morbi tristique
+          justo vel turpis sollicitudin, et tristique velit convallis. In hac habitasse platea
+          dictumst. Phasellus mattis nunc sed orci consequat laoreet. Praesent id nisl nibh.
+          Curabitur imperdiet ultricies mollis. In hac habitasse platea dictumst.
+                </p>
         </section>
     );
 }
 
-export default Navbar;
+export default About;

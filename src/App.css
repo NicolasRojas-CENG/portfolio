@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     background-color: rgb(3, 3, 3);
 }
@@ -10,7 +16,60 @@ header li{
     color: rgb(45, 43, 43);
     text-decoration: none;
 }
-p{
+
+.About{
+    display: block;
+    margin: 1.75vh auto 0 auto;
     background-color: rgb(220, 191, 0);
     color: rgb(45, 43, 43);
+    font-size: 2.5vh;
+    padding-bottom: 3vh;
+    width: 75%;
+}
+
+.About div{
+    display: flex;
+    background-color: rgb(45, 43, 43);
+}
+
+.About div img{
+    border-color: rgb(45, 43, 43);
+    border-width: 2vh;
+    border-style: solid;
+    width: 45%;
+    border-radius: 50%;
+}
+
+.About div h1{
+    color: rgb(220, 191, 0);
+    margin: auto auto auto auto;
+    font-size: 7vh;
+}
+
+.About p{
+    padding: 1vh 2vh 1vh 2vh;
+}
+
+@media screen and (max-width: 575px) {
+    .About{
+        width: 100%;
+        margin: 0;
+    }
+
+    .About div h1{
+        font-size: 4vh;
+        text-align: center;
+    }
+
+    .About div{
+        display: block;
+    }
+
+    .About div img{
+        margin: 0.2vh 15vh 0;
+        padding: 0;
+        border-color: rgb(220, 191, 0);
+        border-width: 1vh;
+        border-style: double;
+    }
 }

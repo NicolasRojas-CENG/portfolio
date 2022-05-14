@@ -11,7 +11,6 @@ function Navbar(props) {
   } = props;
 
     return (
-        <header>
             <nav>
                 <ul className="flex-row">
                     <li className={`mx-2 ${contactSelected && 'navActive'}`}>
@@ -31,7 +30,6 @@ function Navbar(props) {
                     ))}
                 </ul>
             </nav>
-        </header>
     );
 }
 

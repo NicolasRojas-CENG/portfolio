@@ -22,15 +22,17 @@ function App() {
   const [contactSelected, setContactSelected] = useState(false);
 
   return (
-    <div>
-        <Header></Header>
-      <Nav
-        categories={categories}
-        setCurrentCategory={setCurrentCategory}
-        currentCategory={currentCategory}
-        contactSelected={contactSelected}
-        setContactSelected={setContactSelected}
-      ></Nav>
+    <>
+        <section id='section'>
+            <Header></Header>
+            <Nav
+                categories={categories}
+                setCurrentCategory={setCurrentCategory}
+                currentCategory={currentCategory}
+                contactSelected={contactSelected}
+                setContactSelected={setContactSelected}
+            ></Nav>
+        </section>
       <main>
         {!contactSelected ? (
           <>
@@ -41,7 +43,7 @@ function App() {
           <ContactForm></ContactForm>
         )}
       </main>
-    </div>
+    </>
   );
 }
 

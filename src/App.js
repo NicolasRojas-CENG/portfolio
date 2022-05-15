@@ -4,6 +4,7 @@ import Nav from './components/Navbar';
 import About from './components/About';
 //import Gallery from './components/Gallery';
 import ContactForm from './components/Contact';
+import Footer from './components/Footer';
 import './App.css';
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
           <ContactForm></ContactForm>
         )}
       </main>
+      <Footer></Footer>
     </>
   );
 }

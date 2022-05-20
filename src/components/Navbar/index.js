@@ -1,35 +1,34 @@
 import React from 'react';
-import { capitalizeFirstLetter } from '../../utils/helpers';
-
-function Navbar(props) {
-  const {
-    categories = [],
-    setCurrentCategory,
-    contactSelected,
-    currentCategory,
-    setContactSelected,
-  } = props;
-
+function Navbar({ currentPage, handlePageChange }) {
     return (
-            <nav>
-                <ul className="flex-row">
-                    <li className={`mx-2 ${contactSelected && 'navActive'}`}>
-                        <span onClick={() => setContactSelected(true)}>Contact</span>
-                    </li>
-                    {categories.map((category) => (
-                        <li className={`mx-1 ${
-                            currentCategory.name === category.name && !contactSelected && 'navActive'
-                        }`} key={category.name}>
-                            <span onClick={() => {
-                                setCurrentCategory(category);
-                                setContactSelected(false);
-                            }}>
-                                {capitalizeFirstLetter(category.name)}
-                            </span>
-                        </li>
-                    ))}
-                </ul>
-            </nav>
+        <nav>
+            <ul className="flex-row nav nav-tabs">
+                <li className="nav-item">
+                    <a href="#About"
+                        onClick={() => handlePageChange('About')}
+                        className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
+                    >About</a>
+                </li>
+                <li className="nav-item">
+                    <a href="#Contact"
+                        onClick={() => handlePageChange('Contact')}
+                        className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
+                    >Contact</a>
+                </li>
+                <li className="nav-item">
+                    <a href="#Portfolio"
+                        onClick={() => handlePageChange('Portfolio')}
+                        className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}
+                    >Portfolio</a>
+                </li>
+                <li className="nav-item">
+                    <a href="#Resume"
+                        onClick={() => handlePageChange('Resume')}
+                        className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
+                    >Resume</a>
+                </li>
+            </ul>
+        </nav>
     );
 }
 

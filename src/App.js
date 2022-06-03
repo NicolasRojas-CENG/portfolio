@@ -1,25 +1,43 @@
-import logo from './logo.svg';
+import Header from './components/Header'
+import Nav from './components/Navbar';
+import About from './components/About';
+import ContactForm from './components/Contact';
+import Portfolio from './components/Portfolio';
+import Footer from './components/Footer';
+import Resume from './components/Resume';
+import React, { useState } from 'react';
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [currentPage, setCurrentPage] = useState('About');
+    const renderPage = () => {
+        if (currentPage === 'About') {
+          return <About />;
+        }
+        if (currentPage === 'Contact') {
+          return <ContactForm />;
+        }
+        if (currentPage === 'Portfolio') {
+            return <Portfolio />;
+        }
+        else{
+            return <Resume />
+        }
+      };
+
+      const handlePageChange = (page) => setCurrentPage(page);
+    return (
+        <>
+            <section id='section'>
+                <Header></Header>
+                <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
+            </section>
+            <main>
+                {renderPage()}
+            </main>
+            <Footer></Footer>
+        </>
+    );
 }
 
 export default App;

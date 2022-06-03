@@ -8,13 +8,11 @@ function About() {
                 <img src={coverImage} className="my-2" alt="cover" />
             </div>
             <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum turpis sed ex
-          condimentum molestie. Mauris condimentum lectus ut ornare dignissim. Mauris faucibus urna
-          mi, ac feugiat metus aliquam maximus. Proin aliquam justo nec diam vulputate vestibulum.
-          Aenean sollicitudin nulla at nisi ornare, nec suscipit massa eleifend. Morbi tristique
-          justo vel turpis sollicitudin, et tristique velit convallis. In hac habitasse platea
-          dictumst. Phasellus mattis nunc sed orci consequat laoreet. Praesent id nisl nibh.
-          Curabitur imperdiet ultricies mollis. In hac habitasse platea dictumst.
+            My name is Luca Rojas. I am a 23-year-old Costarican born Canadian. I have a background
+        in computer engineering technology and recent graduate of the University of Toronto's
+        full-stack web development Bootcamp. I have 5 years of coding experience, which cover Java, JavaScript,
+        HTML/CSS, C, and Python. I am always excited to learn new technologies to further my knowledge
+        in the web development field.
                 </p>
         </section>
     );

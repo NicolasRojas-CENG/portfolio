@@ -1,5 +1,6 @@
 import React from 'react';
-import FeaturedProject from '../../assets/PickUpSports.PNG'
+import FeaturedProject from '../../assets/MyAttic.PNG'
+import PickUpSports from '../../assets/PickUpSports.PNG'
 import WeatherApp from '../../assets/WeatherApp.PNG'
 import PasswordGenerator from '../../assets/PasswordGenerator.PNG'
 import TeamProfileGenerator from '../../assets/TeamProfileGenerator.png'
@@ -10,9 +11,30 @@ function Portfolio() {
         <section className='Portfolio'>
             <h2>Featured Project</h2>
             <article className='Featured'>
-                <h3>Pickup Sports</h3>
+                <h3>MyAttic</h3>
                 <div>
                     <img src={FeaturedProject} className="my-2" alt="cover" />
+                    <aside>
+                        <h4>Description</h4>
+                        <p>A website that serves as an online garage sale. Users can upload their stuff
+                            that they would like to sell to their profile page, which allows other users to
+                            view and purchase these products.
+                        </p>
+                        <h4>Technologies</h4>
+                        <p>JavaScript/Node.js <br></br> HTML/CSS <br></br>React<br></br>GraphQL<br></br>MongoDB
+                        <br></br>JWT authentication<br></br>Stripe payment platform</p>
+                        <h4>Links</h4>
+                        <a href='https://myattic-therewillbecodetoo.herokuapp.com/'>Website</a>
+                        <br></br>
+                        <a href='https://github.com/NicolasRojas-CENG/myattic'>GitHub</a>
+                    </aside>
+                </div>
+            </article>
+            <h2>Web Development Projects</h2>
+            <article className='WebProjects'>
+            <h3>Pickup Sports</h3>
+                <div>
+                    <img src={PickUpSports} className="my-2" alt="cover" />
                     <aside>
                         <h4>Description</h4>
                         <p>A website to connect users to find players for select sports in the Toronto area.
@@ -29,7 +51,6 @@ function Portfolio() {
                     </aside>
                 </div>
             </article>
-            <h2>Web Development Projects</h2>
             <article className='WebProjects'>
                 <h3>Weather App</h3>
                 <div>
@@ -105,7 +126,7 @@ function Portfolio() {
             </article>
             <h2>Up Coming Projects</h2>
             <article className='FutureProjects'>
-                <h3>Group Project 3</h3>
+                <h3>Gaming E-Commerce site</h3>
             </article>
         </section>
     );
